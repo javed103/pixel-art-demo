@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Demo</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+<div id="app">
+    <h1>Pixel Art Demo</h1>
+
+    <!-- Color Palette -->
+    <div id="color-palette">
+        <div class="color" style="background-color: #000000;"></div>
+        <div class="color" style="background-color: #FFFFFF;"></div>
+        <div class="color" style="background-color: #FF0000;"></div>
+        <div class="color" style="background-color: #00FF00;"></div>
+        <div class="color" style="background-color: #0000FF;"></div>
+        <div class="color" style="background-color: #FFFF00;"></div>
+        <div class="color" style="background-color: #FF00FF;"></div>
+        <div class="color" style="background-color: #00FFFF;"></div>
+        <div class="color" style="background-color: #FFA500;"></div>
+        <div class="color" style="background-color: #A52A2A;"></div>
+        <div class="color" style="background-color: #800080;"></div>
+    </div>
+
+    <!-- Grid Size Buttons (Hidden in the final image) -->
+    <div id="grid-size">
+        <button onclick="changeGridSize(8)">8x8</button>
+        <button onclick="changeGridSize(12)">12x12</button>
+        <button onclick="changeGridSize(16)">16x16</button>
+        <button onclick="changeGridSize(32)">32x32</button>
+    </div>
+
+    <!-- Paint Bucket (Hidden in the final image) -->
+    <button id="paint-bucket" onclick="toggleFillTool()">Paint Bucket / Fill Tool</button>
+
+    <!-- Grid Container -->
+    <div id="grid-container"></div>
+
+    <!-- Download Format Selection -->
+    <div id="format-selection">
+        <label for="file-format">Select Format: </label>
+        <select id="file-format">
+            <option value="png">PNG</option>
+            <option value="jpg">JPG</option>
+            <option value="gif">GIF</option>
+        </select>
+        <button id="downloadbtn" onclick="savePageAsImage()">Download</button>
+    </div>
+</div>
+
+<!-- Include html2canvas from CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<!-- Link to external JavaScript file -->
+<script src="JS/script.js"></script>
+
+</body>
+</html>
