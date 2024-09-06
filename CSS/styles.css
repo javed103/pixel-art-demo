@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    margin: 20px auto;
+    width: 80%;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#color-palette {
+    margin-top: 20px;
+}
+
+.color {
+width: 30px;
+height: 30px;
+border: 1px solid #afadad;
+display: inline-block;
+margin: -1px; /* Reduced margin to 2px (you can adjust this as needed) */
+padding: 0; /* No padding inside the color box */
+cursor: pointer;
+}
+#grid-size {
+    margin-top: 10px;
+}
+
+button {
+background-color: #acaae8; /* Green background */
+border: none;
+border-radius: 5px; /* Rounded corners */
+box-shadow: 0 5px #e5e9f0; /* Darker bottom shadow for 3D effect */
+color: #7b4848; /* White text */
+padding: 12px 24px; /* Padding for button size */
+text-align: center; /* Center text */
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.2s ease; /* Smooth hover effect */
+}
+
+button:hover {
+background-color: #45a049; /* Slightly lighter green on hover */
+box-shadow: 0 3px #2e7d32; /* Reduced shadow for hover effect */
+transform: translateY(-2px); /* Make it "pop" upwards on hover */
+}
+
+button:active {
+background-color: #3e8e41; /* Even darker when clicked */
+box-shadow: 0 2px #2e7d32; /* Minimal shadow when pressed */
+transform: translateY(0); /* Reset position on click */
+}
+
+/* Styling for text with shadow effect */
+h1, h2, h3, p {
+font-family: 'Arial', sans-serif;
+color: #333; /* Dark gray text color */
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Light shadow for text */
+}
+
+/* Optional Styling for Labels (Pixel Art Title) */
+#app h1 {
+font-size: 32px;
+font-weight: bold;
+color: #222;
+text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4); /* Stronger shadow for title */
+}
+
+
+/* Dropdown container styling */
+#file-format {
+appearance: none; /* Hide default dropdown arrow */
+background-color: #acaae8; /* Green background */
+border: none;
+border-radius: 5px; /* Rounded corners */
+box-shadow: 0 5px #e5e9f0; /* Bottom shadow for 3D effect */
+color: #7b4848; /* White text */
+padding: 12px 24px; /* Padding for size */
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+text-align: center;
+transition: all 0.3s ease; /* Smooth hover effect */
+outline: none; /* Remove focus outline */
+width: 200px; /* Fixed width for the dropdown */
+}
+
+/* Custom arrow for the dropdown */
+#file-format::after {
+content: "▼"; /* Custom down arrow */
+font-size: 12px;
+color: white; /* Arrow color */
+position: absolute;
+right: 15px; /* Position the arrow inside */
+top: calc(50% - 6px); /* Center vertically */
+pointer-events: none; /* Make sure the arrow is not clickable */
+}
+
+/* Hover and focus effect */
+#file-format:hover {
+background-color: #45a049; /* Lighter green on hover */
+}
+
+#dfile-format:focus {
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Focus shadow */
+}
+
+/* Dropdown options styling */
+#file-format option {
+background-color: #fff; /* White background for options */
+color: #333; /* Dark text color */
+padding: 10px;
+}
+
+/* On mobile devices, use the default look */
+@media (max-width: 600px) {
+#file-format {
+appearance: auto; /* Show default appearance for mobile */
+}
+}
+/* Label styling for "Select Format" */
+label[for="file-format"] {
+font-weight: bold; /* Make the text bold */
+font-size: 18px; /* Increase the font size */
+color: #333; /* Dark gray color for better readability */
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+margin-right: 10px; /* Add space between label and dropdown */
+display: inline-block; /* Ensure proper alignment */
+vertical-align: middle; /* Align the label with the select box */
+margin-bottom: 10px; /* Add margin to the bottom */
+}
+
+
+#grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(8, 30px);
+    gap: 0px;
+    margin: 20px auto;
+padding-bottom: 2rem;
+}
+
+.pixel {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000000;
+    background-color: white;
+    cursor: pointer;
+}
+
+#paint-bucket {
+    margin-top: 20px;
+}
+
+#format-selection {
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
