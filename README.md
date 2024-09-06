@@ -16,7 +16,7 @@ This is a simple Pixel Art demo where users can select colors from a palette and
 5. Download your pixel art using the download button, choosing between PNG, JPG, or GIF formats.
 
 ## Live Demo
-You can try the live demo here: [Pixel Art Demo](https://your-username.github.io/pixel-art-demo/)
+You can try the live demo here: [Pixel Art Demo](https://javed103.github.io/pixel-art-demo/)
 
 ## Technologies Used
 - HTML5
